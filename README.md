@@ -4,8 +4,8 @@ Static recreation of the approved Squarespace design for GitHub Pages. No packag
 
 ## Pages
 
-- `index.html`: homepage
-- `about/index.html`: firm and proprietor portrait
+- `index.html`: opening About page with the firm introduction and proprietor portrait
+- `about/index.html`: retained About URL; mirrors the opening page and uses the homepage canonical URL
 - `areas-of-practice/index.html`: seven services, including Registration
 - `contact-us/index.html`: office contact details and enquiry form
 - `thank-you/index.html`: form return page
