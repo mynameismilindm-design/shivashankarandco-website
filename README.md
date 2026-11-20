@@ -19,7 +19,7 @@ From this directory, run `python3 -m http.server 8765`, then open `http://localh
 
 ## Hosting
 
-Publish the `main` branch root through GitHub Pages. `.nojekyll` prevents Jekyll processing. The intended custom domain is `shivashankarandco.com`. Add the `CNAME` file and GitHub Pages custom-domain setting only when ready to connect the domain. Preserve all Google Workspace MX and email verification/security records when changing website DNS.
+The site is published from the `main` branch root through GitHub Pages at `https://github.com/mynameismilindm-design/shivashankarandco-website`. `.nojekyll` prevents Jekyll processing. The custom domain `shivashankarandco.com` is configured in GitHub Pages and the `CNAME` file. The four GitHub apex A records and the `www` CNAME are saved at Squarespace; Google Workspace MX, SPF and DKIM records are preserved. HTTPS provisioning and form activation must be verified before marking the launch complete.
 
 The domain registration and Google Workspace subscription remain separate from hosting. This repository contains only public website content and assets; it does not contain mailbox credentials, private API keys or customer submissions.
 
