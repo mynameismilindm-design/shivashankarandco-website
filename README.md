@@ -27,7 +27,7 @@ The domain registration and Google Workspace subscription remain separate from h
 
 The contact form uses FormSubmit's standard form POST endpoint for `proprietor@shivashankarandco.com`. It includes an email field for replies, the selected services, a honeypot and the provider's default CAPTCHA. CAPTCHA has not been disabled.
 
-FormSubmit requires the recipient to activate the form through its confirmation email before enquiries are delivered. The first submission triggers that email. The proprietor should confirm it, then complete an agreed test enquiry and verify receipt. Website code alone cannot prove delivery. No activation or delivery test was performed while building these files.
+The recipient confirmed FormSubmit activation on 20 November 2026. An authorized setup test with Registration and Book-keeping selected passed the provider's CAPTCHA and redirected to the configured thank-you URL. Inbox receipt is still awaiting recipient confirmation. The thank-you page is temporarily blocked by the custom domain's pending HTTPS certificate; no security warning was bypassed. A successful redirect alone does not prove email delivery.
 
 The success redirect is `https://shivashankarandco.com/thank-you/`, so it is intended for the connected custom domain. During temporary GitHub Pages testing, use care before submitting: that redirect will still use the final domain. The thank-you page does not claim that an email has been delivered.
 
