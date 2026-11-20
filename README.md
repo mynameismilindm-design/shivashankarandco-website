@@ -19,7 +19,7 @@ From this directory, run `python3 -m http.server 8765`, then open `http://localh
 
 ## Hosting
 
-The site is published from the `main` branch root through GitHub Pages at `https://github.com/mynameismilindm-design/shivashankarandco-website`. `.nojekyll` prevents Jekyll processing. The custom domain `shivashankarandco.com` is configured in GitHub Pages and the `CNAME` file. The four GitHub apex A records and the `www` CNAME are saved at Squarespace; Google Workspace MX, SPF and DKIM records are preserved. Form activation and email delivery are verified. HTTPS provisioning remains pending before the secure launch can be marked complete.
+The site is published from the `main` branch root through GitHub Pages at `https://github.com/mynameismilindm-design/shivashankarandco-website`. `.nojekyll` prevents Jekyll processing. The custom domain `shivashankarandco.com` is configured in GitHub Pages and the `CNAME` file. The four GitHub apex A records and the `www` CNAME are saved at Squarespace; Google Workspace MX, SPF and DKIM records are preserved. The live site is https://shivashankarandco.com/. HTTPS is enabled and enforced, and the www address redirects to the main domain. Form activation and email delivery are verified. Public pages and assets were checked successfully over HTTPS on 21 November 2026.
 
 The domain registration and Google Workspace subscription remain separate from hosting. This repository contains only public website content and assets; it does not contain mailbox credentials, private API keys or customer submissions.
 
@@ -27,7 +27,7 @@ The domain registration and Google Workspace subscription remain separate from h
 
 The contact form uses FormSubmit's standard form POST endpoint for `proprietor@shivashankarandco.com`. It includes an email field for replies, the selected services, a honeypot and the provider's default CAPTCHA. CAPTCHA has not been disabled.
 
-The recipient confirmed FormSubmit activation on 20 November 2026. An authorized setup test with Registration and Book-keeping selected passed the provider's CAPTCHA and redirected to the configured thank-you URL. The recipient confirmed that the test email arrived correctly, including both selected services. End-to-end email delivery is verified. The thank-you page is temporarily blocked by the custom domain's pending HTTPS certificate; no security warning was bypassed. A successful redirect alone does not prove email delivery.
+The recipient confirmed FormSubmit activation on 20 November 2026. An authorized setup test with Registration and Book-keeping selected passed the provider's CAPTCHA and redirected to the configured thank-you URL. The recipient confirmed that the test email arrived correctly, including both selected services. End-to-end email delivery is verified. The thank-you page now loads successfully over HTTPS. No security warning was bypassed. A successful redirect alone does not prove email delivery.
 
 The success redirect is `https://shivashankarandco.com/thank-you/`, so it is intended for the connected custom domain. During temporary GitHub Pages testing, use care before submitting: that redirect will still use the final domain. The thank-you page does not claim that an email has been delivered.
 
